@@ -1,17 +1,19 @@
 {
-  "configurations": [
-    {
-      "browse": {
-        "databaseFilename": "",
-        "limitSymbolsToIncludedHeaders": true
-      },
-      "includePath": [
-        "/opt/ros/kinetic/include",
-        "/home/ros/Desktop/ros_ws/src/dem_wall_following/include",
-        "/home/ros/Desktop/ros_ws/src/move_turtlesim/include",
-        "/usr/include"
-      ],
-      "name": "Linux"
-    }
-  ]
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/opt/ros/kinetic/include",
+                "/home/ros/Desktop/ros_ws/src/dem_wall_following/include",
+                "/home/ros/Desktop/ros_ws/src/move_turtlesim/include",
+                "/usr/include"
+            ],
+            "name": "Linux",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
 }

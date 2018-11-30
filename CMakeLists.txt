@@ -21,6 +21,7 @@ include_directories(include
 )
 
 add_executable(busroute_node src/busroute.cpp)
+add_executable(pure_pursuit src/pure_pursuit.cpp)
 
 ###################################
 ## catkin specific configuration ##
