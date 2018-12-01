@@ -187,7 +187,7 @@ int main(int argc, char **argv)
     //       robot_pos_x/y.
     //       Consider using a scalar on the angle difference before sending the
     //       speed reference.
-vel_msg.angular.z=  atan2 ((lookahead_y-robot_pos_y),(lookahead_x -robot_pos_x))-robot_yaw)*0.5;;
+vel_msg.angular.z = (atan2((lookahead_y-robot_pos_y),(lookahead_x -robot_pos_x))-robot_yaw)*0.5;;
 
     // Linear speed
     // TODO: Find the Euclidean distance between the lookahead point and the
