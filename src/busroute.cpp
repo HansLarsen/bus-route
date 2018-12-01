@@ -69,7 +69,7 @@ private:
             stops_order[i] = stops_order[i + 1];
         }
         stops_order[stops_initialized - 1] = savedPoint;
-    } 
+    }
 
     void _send_markers() //Sets the markers on the map.
     {
@@ -140,21 +140,21 @@ private:
 
     void _sort_routes_next_closest() //Finds the next closest point and adds it to an array and saves the array.
     {
-        
+
         if (stops_initialized == 1) return;
         int temp_stops_order [ArraySize];
-        for (int i = 0; i < ArraySize; i++) //Goes though the stops_order array. Point 1 is i.
+        for (int i = 0; i < ArraySize; i++) //Goes through the stops_order array. Point 1 is i.
         {
             temp_stops_order[i] = 0;
         }
 
-        for (int i = 0; i < stops_initialized - 1; i++) //Goes though the stops_order array. Point 1 is i.
+        for (int i = 0; i < stops_initialized - 1; i++) //Goes through the stops_order array. Point 1 is i.
         {
             int pointNumber = temp_stops_order[i];
             PointStamped point1 = points[pointNumber];
             int number = 0;
             float oldLength = 100.0;
-            for (int j = 0; j < stops_initialized; j++) //Goes though the stops_order array, and compares the length to the next vector.
+            for (int j = 0; j < stops_initialized; j++) //Goes through the stops_order array, and compares the length to the next vector.
             {
                 if ( _containes_point(j, temp_stops_order) )
                 {
@@ -230,7 +230,7 @@ int main(int argc, char *argv[])
     ##                                      InterActive Marker                                 ##
     #############################################################################################
     */
-    
+
     // create an interactive marker server on the topic namespace simple_marker
     interactive_markers::InteractiveMarkerServer server("simple_marker");
 
