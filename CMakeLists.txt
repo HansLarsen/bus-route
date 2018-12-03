@@ -44,3 +44,7 @@ catkin_package(
 target_link_libraries(busroute_node
   ${catkin_LIBRARIES}
 )
+
+target_link_libraries(pure_pursuit
+  ${catkin_LIBRARIES}
+)
